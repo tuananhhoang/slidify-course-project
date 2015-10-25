@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Develop Data Product - Course Project P2</title>
+  <meta name="description" content="">
+  <meta name="author" content="Tuan Hoang">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "libraries/widgets/quiz/css/demo.css">
+<link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Motor Trend Car Road Tests Dataset - Analysis</h2>
+  <p><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">Motor Trend Car Road Tests Dataset</a>: The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).</p>
+
+<p><strong>Data Analysis</strong>: There are many factors that can affect to mpg (Miles per gallon), and therefore it is required to analyze relationships of many different variables to recognize <a href="https://en.wikipedia.org/wiki/Confounding">confounding variables</a> and to avoid <a href="https://en.wikipedia.org/wiki/Omitted-variable_bias">omitted-variable bias</a> when estimating mpg.</p>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Analysis Options</h2>
+  <ol>
+<li>Customize x-axis and/or y-axis</li>
+<li>Customize plotting points by
+
+<ul>
+<li>Colour</li>
+<li>Size</li>
+</ul></li>
+</ol>
+
+<p><img src="./assets/img/option.PNG" alt="Analysis Option"></p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>The resulting PLOT</h2>
+  <p>The resulting plot looks like this</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Correlation</h2>
+  <p>Correlation of x-axis variable and y-axis variable is calculated and displayed also.</p>
+
+<p><img src="./assets/img/correlation.PNG" alt="Analysis Option"></p>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Future Works</h2>
+  <p align="left"><b>In order for user to be able to perform data analysis on many different datasets, this data product could be expanded by</b></p>
+
+<p align="left">1. Allowing user to input either:</p>
+
+<p align="left">  - Name of a dataset that can be loaded directly using _data_ command in r</p>
+
+<p align="left">  - Path to a local csv file that contain any data that user wish to analyze</p>
+
+<p align="left">2. Then data variables shall be loaded automatically into the customized selection boxes of x-axis, y-axis, colour, size</p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> -->
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- End Google Prettify --> 
+
+</html>
