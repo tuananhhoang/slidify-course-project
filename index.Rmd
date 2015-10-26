@@ -17,6 +17,10 @@ knit        : slidify::knit2slides
 
 **Data Analysis**: There are many factors that can affect to mpg (Miles per gallon), and therefore it is required to analyze relationships of many different variables to recognize [confounding variables](https://en.wikipedia.org/wiki/Confounding) and to avoid [omitted-variable bias](https://en.wikipedia.org/wiki/Omitted-variable_bias) when estimating mpg.
 
+**Source Code**: All source code of this presentation can be found in [my github](https://github.com/tuananhhoang/slidify-course-project/blob/master/index.Rmd)
+
+**Notice about Shiny app's source code**: I accidently forgot to add GitHub reference to my Shiny app's source code (ui.R & server.R), therefore I put the link over [here](https://github.com/tuananhhoang/shiny-course-project). Hopefully you can see it. Thank you very much!
+
 ---
 
 ## Analysis Options
